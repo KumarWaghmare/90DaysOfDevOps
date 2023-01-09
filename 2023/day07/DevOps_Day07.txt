@@ -1,0 +1,62 @@
+1. Install docker and jenkins in your system from your terminal using package managers and write a small blog or article to install these tools using package managers on Ubuntu.
+Docker and Jenkins are two popular tools that are widely used for building and deploying applications. In this tutorial, we will show you how to install these tools on Ubuntu using the package manager.
+
+To INSTALL DOCKER on Ubuntu, follow these steps:
+
+Install & Update the package index:
+"sudo apt install"
+"sudo apt update"
+
+Install Docker:
+"sudo apt install docker.io"
+
+Start the Docker daemon:
+"sudo systemctl start docker"
+
+To verify that Docker is installed and running correctly, run the following command:
+docker run hello-world
+This should pull and run the “hello-world” image, which will output a message saying that Docker is working correctly.
+
+To INSTALL JENKINS on Ubuntu, follow these steps:
+
+Add the GPG key for the Jenkins package repository to your system:
+"wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/jenkins.gpg > /dev/null"
+This will import the GPG key for Jenkins into the “/etc/apt/trusted.gpg.d” directory, which will allow “apt” to verify the authenticity of the Jenkins packages.
+
+Add the Jenkins package repository to your system’s list of sources:
+"echo deb https://pkg.jenkins.io/ubuntu-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list"
+
+Update the package index:
+"sudo apt update"
+
+Install Jenkins:
+"sudo apt install jenkins"
+
+Start the Jenkins daemon:
+"sudo systemctl start jenkins"
+ 
+To enable the Jenkins daemon to start on boot:
+"sudo systemctl enable jenkins"
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. About systemctl and systemd
+“systemd” is a system and service manager for Linux systems that provides many powerful features for managing processes and system resources. “systemctl” is a command-line utility that is used to control and manage the “systemd” system and service manager.
+
+With “systemctl”, you can start, stop, and restart services, enable and disable them to start at boot, and check the status of services. You can also use “systemctl” to view and manage system logs, configure system startup and shutdown, and set system-wide environment variables.
+
+Here are some examples of common “systemctl” commands:
+
+systemctl start service: Start a service
+systemctl stop service: Stop a service
+systemctl restart service: Restart a service
+systemctl enable service: Enable a service to start at boot
+systemctl disable service: Disable a service from starting at boot
+systemctl status of service: Check the status of a service
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. Difference between systemctl and service
+“systemctl” is a command-line utility used to control and manage the “systemd” system and service manager on Linux systems. It can be used to start, stop, and restart services, enable and disable them to start at boot, and check the status of services. “service” is a more generic utility that is used to manage services on a wider range of systems, including those that do not use “systemd”. If your system uses “systemd”, you should use “systemctl” to manage services. If your system does not use “systemd”, or if you are not sure, you can use “service” as a more generic utility.
+
+service service start : Start a service
+service service stop: Stop a service
+service service restart: Restart a service
+service service status: Check the status of a service
+Note that the syntax for “service” is different from “systemctl”. With “service”, you need to specify the name of the service as the first argument, followed by the action (start, stop, restart, etc.) as the second argument.
