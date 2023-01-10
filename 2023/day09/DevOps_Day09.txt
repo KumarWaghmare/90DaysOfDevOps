@@ -1,0 +1,33 @@
+1. What is Git and why is it important?
+Git is a distributed version control system that allows developers to track changes to their code and collaborate with others on the same codebase. It is important because it enables developers to work on the same codebase simultaneously without having to constantly send files back and forth or constantly merge changes manually. With Git, developers can easily view the entire history of a project, roll back to previous versions, and collaborate with others through branches and pull requests.
+
+2. What is difference Between Main Branch and Master Branch?
+In most cases, the main branch and the master branch are one and the same. The main branch is typically the primary branch that contains the latest version of the code that is considered to be production-ready. The master branch, on the other hand, is a convention that is used by many Git-based projects and is often used as the main branch. However, some projects may use different conventions, such as “main” or “development” as the default branch name. The main point is to use a convention and stick to it, this way it will be easier for other developers to understand and navigate the project.
+
+3. Can you explain the difference between Git and GitHub?
+Git and GitHub are closely related, but they are not the same thing. Git is a version control system that allows developers to manage changes to their code, while GitHub is a platform that provides hosting for Git repositories. With GitHub, developers can store their code remotely and collaborate with others on the same codebase. Additionally, GitHub provides a web-based interface for viewing and managing code, as well as a number of additional features such as issue tracking, pull requests, and wikis.
+
+4. How do you create a new repository on GitHub?
+To create a new repository on GitHub, you will first need to log in to your GitHub account. Once you are logged in, you can click on the “+” button in the top right corner of the screen and select “New repository”. You will then be prompted to enter a name for your repository and a brief description. Additionally, you can choose to make the repository either private or public, once you are done creating the repository, it will be empty and ready for you to start adding files to it.
+
+5. What is difference between local & remote repository? How to connect local to remote?
+A local repository is a version of a codebase that is stored on your local computer, while a remote repository is a version that is stored on a remote server, such as GitHub. To connect a local repository to a remote repository, you will first need to create the remote repository on a hosting service like GitHub. Once you have done that, you can use the command line to link the local repository to the remote repository. The command to use is “git remote add origin remote_repository_URL”, where “origin” is a common alias for the remote repository and “remote_repository_URL” is the URL of the remote repository. Once you have connected the local repository to the remote repository, you can then push your local commits to the remote repository and pull changes from the remote repository to your local machine.
+
+6. Set your user name and email address, which will be associated with your commits.
+To set your user name and email address, which will be associated with your commits in Git, you can use the following command in your command line/terminal:
+
+$ git config --global user.name "Your Name"
+$ git config --global user.email "your.email@example.com"
+
+7. Create a repository named “DevOps” on GitHub.
+To create a repository named “DevOps” on GitHub, first log in to your GitHub account. Once you’re logged in, click on the “+” button in the top right corner of the screen and select “New repository”. In the “Repository name” field, enter “DevOps” and add a brief description if you’d like. Then, click on the “Create repository” button. Your new repository on GitHub is now created.
+
+8. Connect your local repository to the repository on GitHub.
+To connect your local repository to the repository on GitHub, you’ll first need to initialize a new Git repository on your local machine. To do this, navigate to the directory where you want to create your local repository, and then use the command “git init”.
+This will create a new Git repository in your current directory. Then, use the command “git remote add origin remote_repository_URL”, where “origin” is the alias that you are giving to the remote repository and remote_repository_URL is the URL of the repository you created on GitHub.
+
+9. Create a new file in DevOps/Git/Day-02.txt & add some content to it and push your local commits to the repository on GitHub.
+To create a new file in DevOps/Git/Day-02.txt, navigate to the directory where you initialized your local repository and create a new folder called DevOps, inside DevOps folder create another folder Git and inside Git folder create a new text file called Day-02.txt. Once you have created the file, you can add some content to it using a text editor.
+To push your local commits to the repository on GitHub, use the command “git add <file-name>” to stage the file for commit.
+Then, use the command “ git commit -m “Your commit message” ” to create a new commit with the changes you made.
+Finally, use the command “git push origin master” to push your local commits to the remote repository on GitHub. This will upload the file Day-02.txt and it's content in to GitHub repository.
