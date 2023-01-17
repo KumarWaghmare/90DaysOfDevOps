@@ -41,10 +41,12 @@ To access the element of the Dictionary using the key, you can use the square br
 print("My favourite tool is", fav_tools[5]) # this will print "Terraform"
 print("My second favourite tool is", fav_tools[4]) # this will print "Kubernetes"
 ```
-![Alt text](Downloads/4..png)
+![4](https://user-images.githubusercontent.com/121767243/212940845-2c6adce2-72af-46ba-b9b4-98aa82e7c7d6.png)
+
 **5. Create a List of cloud service providers and add an item to a List and sort it in alphabetical order.**
 
 Write a program to add “Digital Ocean” to the list of cloud providers [“AWS”, ”GCP”, ”Azure”] and sort the list in alphabetical order.
 
 This will print [“AWS”, “Azure”, “Digital Ocean”, “GCP”]
-![Alt text](Downloads/5..png)
+![5](https://user-images.githubusercontent.com/121767243/212940936-69c62630-58f1-406e-b2b6-8641d1200df4.png)
+
