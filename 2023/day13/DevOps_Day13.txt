@@ -1,0 +1,19 @@
+1. What is Python?
+Python is a Open source, general purpose, high level, and object-oriented programming language. It was created by Guido van Rossum. Python consists of vast libraries and various frameworks like Django, TensorFlow, Flask, Pandas, Keras etc.
+
+2. Install Python in your respective OS, and check the version.
+To install Python on Ubuntu, you can use the following command in the terminal
+"sudo apt-get install python3"
+To check the version of Python installed, you can use the command
+"python3 --version"
+
+3. About different Data Types in Python.
+In Python, there are several built-in data types, including:
+Integer (int): represents whole numbers, such as 3, -5, and 0.
+Floating point (float): represents decimal numbers, such as 3.14, -5.6, and 0.0.
+String (str): represents a sequence of characters, such as “hello” or “world”.
+Boolean (bool): represents true or false values, such as True or False.
+List (list): represents an ordered collection of items, such as [1, 2, 3].
+Tuple (tuple): represents an ordered collection of items, similar to a list, but immutable.
+Set (set): represents an unordered collection of unique items, such as {1, 2, 3}.
+Dictionary (dict): represents a collection of key-value pairs, such as {“name”: “John”, “age”: 30}
